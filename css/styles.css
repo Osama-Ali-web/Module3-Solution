@@ -1,0 +1,249 @@
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #98d91e;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand h1 {
+  /* Title name */
+  font-family: 'Bebas Neue';
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: -5px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #ffd4b1;
+}
+
+.main-title img {
+  width: 300px;
+  margin-top: 25px;
+}
+
+.main-title h3 {
+  color: #fff;
+  position: relative;
+  top: -60px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.navbar-toggle {
+  top: -10px;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#menu-button:hover{
+  background-color: #ffd4b1;
+}
+
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 40px rgba(63, 12, 31, 0.6);
+  border: 2px solid #3F0C1F;
+  background-color: #000;
+  padding-top: 0px;
+}
+
+.section h3 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section p {
+  color: hsl(0, 4%, 85%);
+
+}
+
+/* Add this to your existing CSS stylesheet */
+.back-to-top {
+  display: block; /* Hide by default */
+  text-align: center;
+  padding: 10px;
+  color: #007bff; /* Change color as needed */
+  text-decoration: none;
+} 
+
+/* Add this to your existing CSS stylesheet */
+
+/* Apply active styles to navigation links with the active-link class */
+.nav-link.active-link {
+  background-color: #ffd4b1; /* Change color as needed */
+  font-weight: bold; /* Change style as needed */
+  /* Add other active link styles as needed */
+}
+
+/* END HOME PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    height: 765px;
+  }
+  .back-to-top.visible-xs {
+    display: block;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container .jumbotron {
+    height: 600px;
+  }
+  .back-to-top.visible-xs {
+    display: block;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .back-to-top.visible-xs {
+    display: block;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 40px;
+  }
+
+  .navbar-brand h1 {
+    /* Title name */
+    padding-top: 20px;
+    font-size: 5vw;
+  }
+
+  #collapsable-nav a {
+    /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span {
+    /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+  .container .section{
+    margin: 0px 30px 30px;
+  }
+
+  .container .section p{
+    font-size: .8em;
+  }
+
+  .container .jumbotron {
+    margin-top: 0px;
+    padding: 30px;
+    padding-top: 0px;
+  }
+
+  .back-to-top.visible-xs {
+    display: block;
+  }
+
+  .main-title img {
+    width: 240px;
+  }
+
+  .main-title h3 {
+    top: -55px;
+    font-size: 27px;
+    margin-top: 15px;
+  }
+/*End of Home Page */
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+  /* Header */
+  .navbar-brand h1 {
+    /* Title name */
+    padding-top: 20px;
+    font-size: 6.5vw;
+  }
+
+  .navbar-toggle .icon-bar {
+    width: 15px;
+  }
+  /* End Header */
+  
+  /* Home */
+  .main-title img {
+    width: 200px;
+  }
+
+  .main-title h3 {
+    top: -50px;
+    font-size: 23px;
+  }
+
+  .container .section{
+    margin: 0px 2px 10px;
+  }
+
+  .container .section p{
+    font-size: .7em;
+  }
+
+  .back-to-top.visible-xs {
+    display: block;
+  }
+  /* End of Home */
+}
